@@ -1,18 +1,19 @@
 import React from "react";
-import PokedexScreen from "../screens/Pokedex";
 import { createStackNavigator } from "@react-navigation/stack";
-import Pokemon from "../screens/Pokemon";
+import PokedexScreen from "../screens/Pokedex";
+import PokemonScreen from "../screens/Pokemon";
 
 const Stack = createStackNavigator();
-export default function FavoriteNavigation() {
+
+export default function PokedexNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="PokedexScreen"
+        name="Pokedex"
         component={PokedexScreen}
-        options={{ title: "Pokedex" }}
+        options={{ title: "", headerTransparent: true }}
       />
-      <Stack.Screen name="Pokemon" component={Pokemon} />
+      <Stack.Screen name="Pokemon" component={PokemonScreen} />
     </Stack.Navigator>
   );
 }

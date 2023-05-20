@@ -1,5 +1,5 @@
 import React from "react";
-import Favorite from "../screens/Favoritos";
+import Favorite from "../screens/Favoritos.js";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
