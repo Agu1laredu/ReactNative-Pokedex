@@ -31,10 +31,10 @@ export default function NavigationTab() {
       />
 
       <Tab.Screen
-        name="Home"
+        name="Account"
         component={HomeNavigation}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "Account",
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),

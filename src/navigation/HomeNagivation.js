@@ -1,5 +1,5 @@
 import React from "react";
-import HomeScreen from "../screens/HomeScreen";
+import AccountScreen from "../screens/Account.js";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
@@ -7,9 +7,9 @@ export default function FavoriteNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ title: "Home" }}
+        name="Account"
+        component={AccountScreen}
+        options={{ title: "Account" }}
       />
     </Stack.Navigator>
   );
